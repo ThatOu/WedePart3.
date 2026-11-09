@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aqua Tropics is Durban's premier retail store for freshwater tropical fish, living aquatic plants, aquascaping products, and custom tank setups.">
+  <meta name="keywords" content="tropical fish durban, aquarium shop KZN, freshwater fish, aquascaping, aqua tropics">
+  <meta property="og:title" content="Aqua Tropics | Premium Tropical Fish & Aquatics Durban">
+  <meta property="og:description" content="Discover vibrant tropical fish, aquatic plants, and expert aquarium supplies in Durban.">
+  <title>Aqua Tropics | Premium Tropical Fish & Aquarium Retail</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">🐠 Aqua Tropics</a>
+      <button class="mobile-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Welcome to Aqua Tropics Durban</h1>
+      <p>Your premier local source for exotic freshwater fish, healthy aquatic flora, and professional maintenance supplies.</p>
+      <br>
+      <a href="products.html" class="btn-primary">Explore Products</a>
+    </section>
+
+    <section>
+      <h2>Why Choose Aqua Tropics?</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Sustainably Sourced</h3>
+          <p>We work exclusively with certified breeders to ensure all freshwater species are healthy and ethically harvested.</p>
+        </div>
+        <div class="card">
+          <h3>Expert Advice</h3>
+          <p>Our team of aquascapers and biologists are available daily to assist with water chemistry and tank health.</p>
+        </div>
+        <div class="card">
+          <h3>Custom Installations</h3>
+          <p>From office aquariums to residential display tanks, we offer tailored design and routine maintenance packages.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Frequently Asked Questions (Interactive FAQ)</h2>
+      <div class="accordion-item">
+        <button class="accordion-header">What are your store operating hours? <span>+</span></button>
+        <div class="accordion-content">
+          <p>We are open Monday to Saturday from 08:30 to 17:00, and Sundays from 09:00 to 14:00.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">Do you deliver live fish in Durban? <span>+</span></button>
+        <div class="accordion-content">
+          <p>Yes, we provide specialized temperature-controlled local delivery across Greater Durban and Umhlanga.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Visit Our Flagship Durban Location</h2>
+      <div id="map"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="current-year"></span> Aqua Tropics (Pty) Ltd. All Rights Reserved. | <a href="sitemap.xml">Sitemap</a></p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

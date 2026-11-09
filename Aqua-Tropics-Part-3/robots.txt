@@ -1,0 +1,10 @@
+# Aqua Tropics Robots.txt
+User-agent: *
+Allow: /
+
+# Disallow administrative or temporary directories (if applicable)
+Disallow: /cgi-bin/
+Disallow: /private/
+
+# Sitemap Location
+Sitemap: https://aquatropics.co.za/sitemap.xml

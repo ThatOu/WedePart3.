@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Aqua Tropics in Durban. Get phone numbers, send general messages, or find our store location map.">
+  <title>Contact Us | Aqua Tropics</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">🐠 Aqua Tropics</a>
+      <button class="mobile-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="form-container">
+      <h1>Contact Aqua Tropics</h1>
+      <p>Send a direct message to our support team or visit us in Durban CBD.</p>
+      <br>
+
+      <form id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="cnt-name">Your Full Name *</label>
+          <input type="text" id="cnt-name" required placeholder="Jane Smith">
+        </div>
+
+        <div class="form-group">
+          <label for="cnt-email">Email Address *</label>
+          <input type="email" id="cnt-email" required placeholder="jane@example.com">
+        </div>
+
+        <div class="form-group">
+          <label for="cnt-phone">Phone Number (Optional - RSA format)</label>
+          <input type="tel" id="cnt-phone" placeholder="0821234567">
+        </div>
+
+        <div class="form-group">
+          <label for="cnt-type">Message Type</label>
+          <select id="cnt-type">
+            <option value="general">General Support</option>
+            <option value="feedback">Feedback</option>
+            <option value="wholesale">Wholesale / Supplier Inquiry</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="cnt-message">Your Message *</label>
+          <textarea id="cnt-message" rows="5" required placeholder="Type your full inquiry message here..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary" style="width: 100%;">Send Message & Compile Email</button>
+      </form>
+
+      <div id="contact-feedback" style="margin-top: 1rem; font-weight: bold; text-align: center;"></div>
+
+      <div style="margin-top: 2rem;">
+        <h2>Store Location Map</h2>
+        <div id="map"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="current-year"></span> Aqua Tropics. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

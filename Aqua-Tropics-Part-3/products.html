@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse our wide catalogue of tropical freshwater fish, aquatic plants, filters, and aquarium supplies with dynamic filtering and lightbox views.">
+  <title>Products Catalogue | Aqua Tropics</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">🐠 Aqua Tropics</a>
+      <button class="mobile-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html" class="active">Products</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Tropical Fish & Aquarium Supplies Catalog</h1>
+    <p>Filter by category or use the live search bar to explore our available stock in Durban.</p>
+
+    <!-- Dynamic Search & Filter Controls -->
+    <div style="display: flex; gap: 1rem; margin: 1.5rem 0; flex-wrap: wrap;">
+      <input type="text" id="product-search" placeholder="Search products (e.g., Neon Tetra)..." style="flex: 1; min-width: 200px; padding: 0.75rem; border: 1px solid #CCC; border-radius: 6px;">
+      <select id="category-filter" style="padding: 0.75rem; border: 1px solid #CCC; border-radius: 6px;">
+        <option value="all">All Categories</option>
+        <option value="fish">Freshwater Fish</option>
+        <option value="plants">Aquatic Plants</option>
+        <option value="supplies">Equipment & Supplies</option>
+      </select>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="grid-3">
+      <div class="card product-card" data-category="fish">
+        <img src="images/neon-tetra.jpg" alt="Neon Tetra Schooling Fish" class="gallery-thumb" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <h3 class="product-title">Neon Tetra</h3>
+        <p>Vibrant schooling fish perfect for planted peaceful aquariums.</p>
+        <p><strong>Price: R 25.00 each</strong></p>
+        <a href="enquiry.html" class="btn-primary" style="margin-top: 0.5rem;">Enquire Now</a>
+      </div>
+
+      <div class="card product-card" data-category="fish">
+        <img src="images/angelfish.jpg" alt="Freshwater Angelfish" class="gallery-thumb" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <h3 class="product-title">Angelfish (Scalare)</h3>
+        <p>Majestic center-piece cichlid species suitable for medium-large tanks.</p>
+        <p><strong>Price: R 85.00 each</strong></p>
+        <a href="enquiry.html" class="btn-primary" style="margin-top: 0.5rem;">Enquire Now</a>
+      </div>
+
+      <div class="card product-card" data-category="plants">
+        <img src="images/java-fern.jpg" alt="Java Fern Aquatic Plant" class="gallery-thumb" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <h3 class="product-title">Java Fern</h3>
+        <p>Low-light hardy live plant that attaches easily to driftwood.</p>
+        <p><strong>Price: R 60.00 bundle</strong></p>
+        <a href="enquiry.html" class="btn-primary" style="margin-top: 0.5rem;">Enquire Now</a>
+      </div>
+
+      <div class="card product-card" data-category="supplies">
+        <img src="images/canister-filter.jpg" alt="External Canister Filter" class="gallery-thumb" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <h3 class="product-title">Canister Filter 1000L/h</h3>
+        <p>High capacity multi-stage mechanical and biological filtration unit.</p>
+        <p><strong>Price: R 1,450.00</strong></p>
+        <a href="enquiry.html" class="btn-primary" style="margin-top: 0.5rem;">Enquire Now</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Interactive Lightbox Modal -->
+  <div id="lightbox-modal" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="Enlarged view">
+  </div>
+
+  <footer>
+    <p>&copy; <span id="current-year"></span> Aqua Tropics. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

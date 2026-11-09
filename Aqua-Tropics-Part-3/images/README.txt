@@ -1,0 +1,1 @@
+Place product images (neon-tetra.jpg, angelfish.jpg, java-fern.jpg, canister-filter.jpg, hero-bg.jpg) in this directory.

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Submit a product enquiry, volunteer request, or custom aquarium installation request to Aqua Tropics with instant cost estimation.">
+  <title>Product Enquiry | Aqua Tropics</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">🐠 Aqua Tropics</a>
+      <button class="mobile-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="enquiry.html" class="active">Enquiry</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="form-container">
+      <h1>Product & Service Enquiry Form</h1>
+      <p>Fill in the details below to receive availability updates and instant estimated costs.</p>
+      <br>
+
+      <form id="enquiry-form" novalidate>
+        <div class="form-group">
+          <label for="enq-name">Full Name *</label>
+          <input type="text" id="enq-name" required placeholder="John Doe">
+          <div class="error-msg">Please enter your full name.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="enq-email">Email Address *</label>
+          <input type="email" id="enq-email" required placeholder="john@example.com">
+          <div class="error-msg">Please enter a valid email address.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="enquiry-item">Select Product / Service *</label>
+          <select id="enquiry-item" required>
+            <option value="neon-tetra" data-price="25">Neon Tetra (R 25.00)</option>
+            <option value="angelfish" data-price="85">Angelfish (R 85.00)</option>
+            <option value="java-fern" data-price="60">Java Fern (R 60.00)</option>
+            <option value="canister-filter" data-price="1450">Canister Filter (R 1,450.00)</option>
+            <option value="maintenance" data-price="500">Aquarium Servicing (R 500.00/hr)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="enquiry-qty">Quantity / Units</label>
+          <input type="number" id="enquiry-qty" min="1" value="1">
+        </div>
+
+        <!-- Dynamic Price Calculation Output -->
+        <div class="price-box">
+          Estimated Total Cost: <span id="estimated-price">R 25.00</span>
+        </div>
+
+        <div class="form-group">
+          <label for="enq-message">Additional Notes / Special Requests</label>
+          <textarea id="enq-message" rows="4" placeholder="Mention tank size, delivery suburb, or sponsorship preferences..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary" style="width: 100%;">Submit Enquiry via AJAX</button>
+      </form>
+
+      <div id="enquiry-feedback" style="margin-top: 1rem; font-weight: bold; text-align: center;"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="current-year"></span> Aqua Tropics. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
